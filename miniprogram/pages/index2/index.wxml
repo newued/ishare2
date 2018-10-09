@@ -1,0 +1,43 @@
+<!--index.wxml-->
+
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}{{motto}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <block wx:if="{{!beginShare}}">
+    <image bindtap='goShare' class='upload-img' src='{{uploadIcon}}'></image>
+      <text class="user-motto">发起lendchain分享</text>
+    </block>
+    <block wx:else>
+      <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="section">
+          <view class="section__title">设置链接：</view>
+          <input name="inputUrl" placeholder="请输入分享链接" />
+        </view>
+        <view class="section">
+          <view class="section__title">设置标题：</view>
+          <input name="inputLink" placeholder="请输入分享标题" />
+        </view>
+        <view class="section">
+          <view class="section__title">设置描述：</view>
+          <input name="inputDes" placeholder="请输入分享描述" />
+        </view>
+        <view class="section section_gap">
+          <view class="section__title">设置图片:</view>
+          <input name="inputImg" placeholder="图片链接是……" wx:if="{{shareinfo.img}}" value='{{shareinfo.img}}'/>
+          <switch checked="{{shareinfo.img}}" bindchange="switchChange"/>
+        </view>
+        <view class="btn-area">
+          <button formType="submit" type='primary'>提交</button>
+          <button formType="reset" type='warn'>取消</button>
+        </view>
+      </form>
+    </block>
+  </view>
+ 
+</view>

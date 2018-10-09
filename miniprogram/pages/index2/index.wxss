@@ -1,0 +1,30 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.usermotto {
+  display: flex;
+  flex-direction: column;
+  margin-top:100rpx;
+  align-items: center;
+  font-size: 30rpx;
+}
+.upload-img{width:80px;height:80px;}
+.usermotto .section{display: flex;flex-flow:row;padding: 20rpx;}
+.usermotto .section input{border:1rpx solid #333;border-radius: 4rpx;}
+.usermotto .section_gap {align-items:center;}
+.usermotto .btn-area{display: flex;flex-direction: row;align-content:flex-start;margin-top:20rpx;}
+.usermotto .btn-area button{padding:10rpx;margin: 0rpx 20rpx;font-size: 30rpx;}

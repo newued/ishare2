@@ -1,0 +1,13 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+
+.item_pub{display: flex;flex-direction: row;align-content: space-between;margin:0 30rpx 10rpx 30rpx;border-radius: 10rpx;border:1rpx solid #eee;box-shadow: 5rpx 3rpx #ddd;align-items: center;}
+.item_pub .left_item{width:200rpx;}
+.item_pub .left_item .img_item{width:160rpx;padding:10rpx;border-right: 1rpx solid #eee;}
+.item_pub .right_item{width:520rpx;}

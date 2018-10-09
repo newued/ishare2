@@ -1,0 +1,41 @@
+<!--logs.wxml-->
+<scroll-view scroll-y = true class="container log-list">
+<!--   <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block> -->
+    <view class='item_pub' wx:for="{{[1, 2, 3, 4]}}" wx:for-item="index" wx:key="*this" >
+      <view class='left_item'>
+          <image class='img_item' mode="widthFix"  src="../../src/icon/ishare_logo.png"/>
+      </view>
+      <view class='right_item'>
+        <view class='line'>
+          <text class='title_item'>立德-区块链好项目</text> 
+        </view>
+        <view class='line'>
+          <text class='desc_item'>立德-区块链区块链好项目立块链好项目</text> 
+        </view>
+        <view class='line'>
+          <text class='add_item'>分享人：sss</text> 
+          <text class='add_item'>共分享1080次</text> 
+        </view>
+      </view>
+    </view>
+    <view class='item_pub'>
+      <view class='left_item'>
+          <image class='img_item' mode="widthFix"  src="../../src/icon/ishare_logo.png"/>
+      </view>
+      <view class='right_item'>
+        <view class='line'>
+          <text class='title_item'>立德-区块链好项目</text> 
+        </view>
+        <view class='line'>
+          <text class='desc_item'>立德-区块链区块链好项目立块链好项目</text> 
+        </view>
+        <view class='line'>
+          <text class='add_item'>分享人：sss</text> 
+          <text class='add_item'>共分享1080次</text> 
+        </view>
+      </view>
+    </view>
+</scroll-view>
+

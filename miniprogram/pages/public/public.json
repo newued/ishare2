@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "热点分享",
+  "enablePullDownRefresh":true,
+  "onReachBottomDistance":50
+
+}
